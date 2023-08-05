@@ -1,1 +1,2 @@
-# 30-Day-Python
+# HackerRank Python Practice Question Series
+https://www.hackerrank.com/domains/python
