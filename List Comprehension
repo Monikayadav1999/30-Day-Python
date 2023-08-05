@@ -1,3 +1,5 @@
+Question: <a href ="https://www.hackerrank.com/challenges/list-comprehensions/problem?isFullScreen=true"> Link </a>
+
 if __name__ == '__main__':
     x = int(input())
     y = int(input())
@@ -6,6 +8,7 @@ if __name__ == '__main__':
     
 """
 Without Using List Comprehension
+
 mylist =[]
 for i in range(x+1):
     for j in range(y+1):
@@ -16,17 +19,19 @@ for i in range(x+1):
 print(mylist)"""
 
 # Using List Comprehension
+
 mylist = list([i,j,a] 
-                        for i in range(x+1)
-                            for j in range(y+1) 
-                                for a in range(z+1) 
-                                    if (i+j+a) != n)
+                for i in range(x+1)
+                for j in range(y+1) 
+                for a in range(z+1) 
+                if (i+j+a) != n)
 print(mylist)
 
-"""
+# OR 
+
 mylist = [[i,j,a] 
             for i in range(x+1) 
-                for j in range(y+1) 
-                    for a in range(z+1) 
-                        if (i+j+a) !=n ]
-print(mylist)"""
+            for j in range(y+1) 
+            for a in range(z+1) 
+            if (i+j+a) !=n ]
+print(mylist)
